@@ -1,0 +1,40 @@
+{#
+{% set my_cool_string = 'oh! thats cool'%}
+{% set my__second_cool_string = 'This is jinja'%}
+{% set my_cool_number = 100 %}
+{{my_cool_string}} {{my__second_cool_string}}
+I want to write jinja for {{my_cool_number}} years
+#}
+
+
+{#
+{% set my_animals = ['cat','dog','tiger','leopard']%}
+{% for animal in my_animals%}
+my favorite animal is {{animal}}
+{% endfor %}
+#}
+
+
+{#
+{% set temperature =25 %}
+
+{% if temperature < 25 %}
+    Its cold
+{%else%}
+    Its normal
+{% endif %}
+#}
+
+
+{#
+{%-set animals = ['cat','peacock','dog']-%}
+
+{%for animal in animals%}
+    {%-if animal == 'peacock'-%}
+        {%-set animal_type = 'bird'-%}
+    {%-else-%}
+        {%-set animal_type = 'pet'-%}
+    {%-endif-%}
+{{animal}} is my favorite {{animal_type}}
+{%endfor%}
+#}
