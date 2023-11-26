@@ -1,7 +1,0 @@
-{{%test assert_payments_amount_is_greater_than_five(model,column_name) %}}
-
-select {{column_name}}
-from {{model}}
-where {{column_name}} <= 5
-
-{%endtest%}
